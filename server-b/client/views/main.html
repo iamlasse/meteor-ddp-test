@@ -4,6 +4,9 @@
 
 <body>
   {{> sAlert}}
+  {{#unless connected}}
+    <em>offline</em>
+  {{/unless}}
   Server B
   <a href="#" class="insert">Insert</a>
   <ul>

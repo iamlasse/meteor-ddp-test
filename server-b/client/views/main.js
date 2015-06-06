@@ -12,5 +12,8 @@
   Template.body.helpers({
     items: function(){
       return Items.find();
+    },
+    connected: function(){
+      return Meteor.status().connected == true
     }
   });
