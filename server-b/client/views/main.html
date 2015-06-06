@@ -1,0 +1,16 @@
+<head>
+  <title>server-b</title>
+</head>
+
+<body>
+  {{> sAlert}}
+  Server B
+  <a href="#" class="insert">Insert</a>
+  <ul>
+  {{#each items}}
+  <li>{{_id}} <a href="#" class="delete">Delete</a></li>
+  {{else}}
+  <li>No items found on A</li>
+  {{/each}}
+  </ul>
+</body>

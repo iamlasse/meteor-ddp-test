@@ -1,0 +1,20 @@
+<head>
+  <title>server-a</title>
+</head>
+
+<body>
+  {{> sAlert}}
+  {{> test }}
+</body>
+
+<template name="test">
+  Server A  
+  <a href="#" class="insert">Insert</a>
+  <ul>
+  {{#each items}}
+  <li>{{_id}} <a href="#" class="delete">Delete</a></li>
+  {{else}}
+  <li>No items?</li>
+  {{/each}}
+  </ul>
+</template>
